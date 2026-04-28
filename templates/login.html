@@ -151,7 +151,8 @@ Administration portal for Fetal PCB Prediction Tool.
 {% if error %}
 <script>
     console.log('login failed.');
-    showAppDialog("Login failed, error: {{ error | tojson }}");
+    const err = {{ error | tojson }};
+    showAppDialog("Login failed, error: " + err);
 </script>
 {% endif %}
 <!-- <script>
