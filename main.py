@@ -9,7 +9,6 @@ from fastapi.templating import Jinja2Templates
 from fastapi.middleware.cors import CORSMiddleware
 import pandas as pd
 import pickle
-from pydantic import BaseModel  # TO BE REMOVED
 
 from contextlib import asynccontextmanager
 
@@ -69,46 +68,6 @@ app.add_middleware(
     SessionMiddleware,
     secret_key="CHANGE_ME"
 )
-
-# TO BE REMOVED
-
-
-# class Features(BaseModel):
-#     Gender: int
-#     Age: int
-#     Chemical_exposure: int
-#     Q30_vaccines_received: int
-#     Daily_dairy_doses: float
-#     Cheese_slices: int
-#     Sum_of_dairy_products: float
-#     Cups_of_coffee: float
-#     Cups_of_tea: float
-#     Cups_of_green_tea: float
-#     Rye_bread: int
-#     Mixed_bread: int
-#     Boiled_potatoes: int
-#     Fried_potatoes: int
-#     Beef_or_pork: int
-#     Reindeer_game_meat: int
-#     Light_meat: int
-#     Sausage_dishes: int
-#     Eggs: int
-#     Fish_dishes: int
-#     Trout_Salmon: int
-#     Domestic_sea_salmon: int
-#     Lake_fish: int
-#     Frozen_fish: int
-#     Shrimp: int
-#     Apple: int
-#     Apple_juice: int
-#     Grilled_food: int
-#     Smoked_food: int
-#     Breaded_food: int
-#     BMI: float
-#     Maternal_Education: int
-#     Smoking: int
-#     Alcohol: int
-#     mPCB: float
 
 # Additional Precuationary route to handle "favicon template not found" exception
 
