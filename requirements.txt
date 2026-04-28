@@ -1,1 +1,6 @@
-fastapi[all]
+fastapi[standard]
+uvicorn[standard]
+sqlmodel
+sqlalchemy
+pandas
+jinja2
