@@ -4,3 +4,4 @@ sqlmodel
 sqlalchemy
 pandas
 jinja2
+itsdangerous
