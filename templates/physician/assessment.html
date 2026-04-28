@@ -207,7 +207,7 @@
         const body = JSON.stringify({ patient_id, gender, pcb_type });
 
         try {
-            const res = await fetch(`http://127.0.0.1:8000/predict_cPCB`, {
+            const res = await fetch(`/predict_cPCB`, {
                 method: "POST",
                 headers: headers,
                 body: body
