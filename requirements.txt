@@ -9,3 +9,4 @@ starlette==0.47.3
 itsdangerous
 
 scikit-learn==1.6.1
+xgboost==3.0.2
