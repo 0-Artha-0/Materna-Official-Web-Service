@@ -8,4 +8,4 @@ python-multipart==0.0.27
 starlette==0.47.3
 itsdangerous
 
-sklearn
+scikit-learn==1.6.1
